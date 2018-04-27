@@ -17,6 +17,7 @@ class CashRegister
     @quantity.times do 
       @all_items << item
     end
+    binding.pry
   end
 
   def apply_discount
@@ -33,7 +34,6 @@ class CashRegister
   end
  
   def void_last_transaction
-    binding.pry
     @total -= @price * @quantity
   end
 end
