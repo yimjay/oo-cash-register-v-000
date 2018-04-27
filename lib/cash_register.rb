@@ -5,7 +5,7 @@ class CashRegister
     @total = 0
   end
   
-  def cash_register_with_discount(discount=0)
+  def cash_register_with_discount(discount)
     @discount = discount
   end
 end
