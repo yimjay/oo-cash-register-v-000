@@ -17,7 +17,6 @@ class CashRegister
     @quantity.times do 
       @all_items << item
     end
-    binding.pry
   end
 
   def apply_discount
