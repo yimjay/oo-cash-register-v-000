@@ -1,7 +1,6 @@
 require "pry"
 class CashRegister
   attr_accessor :total, :discount, :item, :price, :quantity
-  # attr_writer :all_items
   
   def initialize(discount = 0)
     @total = 0
@@ -29,4 +28,7 @@ class CashRegister
     @all_items
   end
 
+  def void_last_transaction
+    
+  end
 end
