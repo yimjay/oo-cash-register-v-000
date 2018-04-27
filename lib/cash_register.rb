@@ -9,8 +9,7 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1)
-    @subtotal = @total + price * quantity
-    # @total += price * quantity
+    @total += price * quantity
     quantity.times do 
       @all_items << item
     end
@@ -30,6 +29,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total = @total - (@subtotal - @total)
+    @total -= @price
   end
 end
